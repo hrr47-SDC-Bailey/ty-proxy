@@ -18,7 +18,7 @@ app.get('/loaderio-409b4cba3c607e7d081c531c6ce14701/', (req, res) => {
 // Image carousel service
 app.use('/api/hostels/:hostel_id/images', createProxyMiddleware({ target: 'http://localhost:3007', changeOrigin: true }));
 // availability service
-app.use('/api/hostel/:hostelId/rooms', createProxyMiddleware({ target: 'http://localhost:3009', changeOrigin: true }));
+app.use('/api/hostels/:hostelId/rooms', createProxyMiddleware({ target: 'http://54.177.93.113:3009/bundle.js', changeOrigin: true }));
 // description map rules service
 app.use('/house/:id/hostel', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
 app.use('/house/:id/description', createProxyMiddleware({ target: 'http://localhost:3000', changeOrigin: true }));
