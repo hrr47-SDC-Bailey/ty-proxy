@@ -10,7 +10,9 @@ app.use((req, res, next) => {
   next();
 });
 app.use('/hostels/:hostel_id', express.static(path.join(__dirname, '../public')));
-
+app.get('/loaderio-409b4cba3c607e7d081c531c6ce14701/', (req, res) => {
+  res.send('loaderio-409b4cba3c607e7d081c531c6ce14701');
+})
 // API reroutes
 
 // Image carousel service
