@@ -20,7 +20,7 @@ app.use('/api/hostels/:hostel_id/images', createProxyMiddleware({ target: 'http:
 // availability service
 app.use('/api/hostels/:hostelId/rooms', createProxyMiddleware({ target: 'http://54.177.93.113:3009/bundle.js', changeOrigin: true }));
 // description map rules service
-app.use('api/house/:id/hostel', createProxyMiddleware({ target: 'http://3.137.143.39, changeOrigin: true }));
+app.use('api/house/:id/hostel', createProxyMiddleware({ target: 'http://3.137.143.39', changeOrigin: true }));
 app.use('api/house/:id/description', createProxyMiddleware({ target: 'http://3.137.143.39', changeOrigin: true }));
 app.use('api/house/:id/rules', createProxyMiddleware({ target: 'http://3.137.143.39', changeOrigin: true }));
 app.use('api/house/:id/address', createProxyMiddleware({ target: 'http://3.137.143.39', changeOrigin: true }));
