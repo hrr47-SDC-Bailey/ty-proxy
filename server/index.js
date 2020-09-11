@@ -23,7 +23,7 @@ app.use('/api/hostels/:hostelId/rooms', createProxyMiddleware({ target: 'http://
 app.use('api/house/:id/hostel', createProxyMiddleware({ target: 'http://18.216.130.250', changeOrigin: true }));
 app.use('api/house/:id/description', createProxyMiddleware({ target: 'http://18.216.130.250', changeOrigin: true }));
 app.use('api/house/:id/rules', createProxyMiddleware({ target: 'http://18.216.130.250', changeOrigin: true }));
-app.use('api/house/:id/address', createProxyMiddleware({ target: 'http://18.216.130.250, changeOrigin: true }));
+app.use('api/house/:id/address', createProxyMiddleware({ target: 'http://18.216.130.250', changeOrigin: true }));
 // reviews service
 app.use('/api/reviews', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
 
