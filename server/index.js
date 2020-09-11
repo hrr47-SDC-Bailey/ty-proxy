@@ -27,7 +27,7 @@ app.use('/api/house/:id/description', createProxyMiddleware({ target: 'http://18
 app.use('/api/house/:id/rules', createProxyMiddleware({ target: 'http://18.216.130.250', changeOrigin: true }));
 app.use('/api/house/:id/address', createProxyMiddleware({ target: 'http://18.216.130.250', changeOrigin: true }));
 // reviews service
-app.use('/api/reviews', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
+app.use('/api/reviews', createProxyMiddleware({ target: 'http://3.23.12.160', changeOrigin: true }));
 
 
 app.listen(PORT, () => console.log('Proxy Server listening on port ', PORT));
