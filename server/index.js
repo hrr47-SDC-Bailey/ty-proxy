@@ -12,13 +12,13 @@ app.use((req, res, next) => {
 app.use('/hostels/:hostel_id', express.static(path.join(__dirname, '../public')));
 app.get('/loaderio-409b4cba3c607e7d081c531c6ce14701/', (req, res) => {
   res.send('loaderio-409b4cba3c607e7d081c531c6ce14701');
-})
+});
 // API reroutes
 
 
 
 // Image carousel service
-app.use('/api/hostels/:hostel_id/images', createProxyMiddleware({ target: 'http://localhost:3007', changeOrigin: true }));
+app.use('/api/hostels/:hostel_id/images', createProxyMiddleware({ target: 'http://3.22.143.147', changeOrigin: true }));
 // availability service
 app.use('/api/hostels/:hostelId/rooms', createProxyMiddleware({ target: 'http://54.219.128.189', changeOrigin: true }));
 // description map rules service
